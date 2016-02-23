@@ -22,7 +22,15 @@
         <activity android:name=".TabFragment" />
         <activity android:name=".MembersFragment" />
         <activity android:name=".NotificationsFragment" />
-        <activity android:name=".Replaceable"></activity>
+        <activity
+            android:name=".Description"
+            android:label="@string/title_activity_description"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ajay.teamexe.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
